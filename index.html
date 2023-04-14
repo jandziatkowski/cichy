@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" type="x-icon" href="images/logo.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper-->
@@ -48,21 +49,11 @@
 									patience. In terms of payments and prices, it depends on the difficulty of client's needs, so if you 
 									are interested in I advise you to hop on to other sections.
 								</p>
-								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a class="image fit"><img src="images/arro.png" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a class="image fit"><img src="images/europarp.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a class="image fit"><img src="images/stolicarp.png" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a class="image fit"><img src="images/warsawproject.jfif" alt=""></a>
-										</div>
-									</div>
+								<section class="work-images">
+									<div><img src="images/arro.png" alt=""></div>
+									<div><img src="images/europarp.jpg" alt=""></div>
+									<div><img src="images/stolicarp.png" alt=""></div>
+									<div><img src="images/warsawproject.png" alt=""></div>
 								</section>
 							</article>
 
@@ -71,28 +62,44 @@
 								<header>
 									<h2>Contact information:</h2>
 								</header>
-								<header>
-									<a class="icon brands fa-discord"></a>Discord:
-								</header>
-								<div class="container">
-									<div class="copy-text">
-										<input type="text" class="text" value="Cichy#4538">
-										<button>
-											<i class="icon solid fa-copy"></i>
-										</button>
-									</div>
-								</div>
-								<p opacity="0">""</p>
-								<p></p>
+								<head>
+									<title>Copy to Clipboard Button</title>
+									<style>
+									.text{
+										border: none;
+										outline: none;
+										padding: 10px;
+										margin-right: 10px;
+									}  
+									.copy-button {
+										background-color: #4CAF50;
+										border: none;
+										color: white;
+										padding: 10px 20px;
+										text-align: center;
+										text-decoration: none;
+										display: inline-block;
+										font-size: 16px;
+										margin: 4px 0;
+										cursor: pointer;
+									}
+									</style>
+								  </head>
+								  <body>
+										<i class="icon brands fa-discord"></i>
+										<input type="text" class="text" value="Cichy#4538" readonly>
+										<button class="copy-button"><i class="icon solid fa-copy"></i></button>
+										<div class="popup-message">Copied to clipboard</div>
+								  </body>
 							</article>
 
 						<!-- Faq -->	
 							<article id="faq" class="panel">
 								<header>
-									<h2>Frequently asked questions</h2>
+									<h2>Frequently asked questions <i class="icon solid fa-question"></i></h2>
 								</header>
 								<h2 style="font-size: 150%;">
-									What is the pricing?
+									<i class="icon solid fa-tag"></i> What is the pricing?
 								</h2>
 								<p>
 									As I said in the portfolio section, the pricing is dependent on the client's needs and
@@ -102,7 +109,7 @@
 									mine and your time.
 								</p>
 								<h2 style="font-size: 150%;">
-									What can be expected from my work?
+									<i class="icon solid fa-file-word"></i> What can be expected from my work?
 								</h2>
 								<p>
 									Since polish fivem community mostly adores roleplay servers in this modification, then all 
@@ -113,13 +120,13 @@
 									charges.
 								</p>
 								<h2 style="font-size: 150%;">
-									What payments do you accept?
+									<i class="icon solid fa-credit-card"></i>  What type of payments do you accept?
 								</h2>
 								<p>
 									Only paypal, no paysafecards or crypto.
 								</p>
 								<h2 style="font-size: 150%;">
-									What is the order of paying and receiving the plugin package?
+									<i class="icon solid fa-handshake"></i> What is the order of paying and receiving the plugin package?
 								</h2>
 								<p>
 									After concluding the client's needs and price negotiations, the deadline of finishing the work 
@@ -145,5 +152,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/copytext.js"></script>
+			<script src="assets/js/slick-init.js"></script>
+			<script type="text/javascript" src="assets/js/slick.min.js"></script>
 	</body>
 </html>
